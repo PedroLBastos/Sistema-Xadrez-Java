@@ -1,4 +1,5 @@
 package sistema_xadrez;
+import boardgame.Position;
 
 /**
  *
@@ -7,7 +8,8 @@ package sistema_xadrez;
 public class Sistema_Xadrez {
 
     public static void main(String[] args) {
-        System.out.println("Ola");
+        Position pos = new Position(3, 5);
+        System.out.println(pos);
     }
     
 }
