@@ -5,7 +5,9 @@
         <group>
             <file>file:/C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Sistema_Xadrez/src/boardgame/Piece.java</file>
             <file>file:/C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Sistema_Xadrez/src/chess/Color.java</file>
+            <file>file:/C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Sistema_Xadrez/src/chess/pieces/Rook.java</file>
             <file>file:/C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Sistema_Xadrez/src/chess/ChessMatch.java</file>
+            <file>file:/C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Sistema_Xadrez/src/chess/pieces/king.java</file>
             <file>file:/C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Sistema_Xadrez/src/boardgame/Board.java</file>
             <file>file:/C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Sistema_Xadrez/src/boardgame/Position.java</file>
             <file>file:/C:/Users/pedro/OneDrive/Documentos/NetBeansProjects/Sistema_Xadrez/src/chess/ChessPiece.java</file>
