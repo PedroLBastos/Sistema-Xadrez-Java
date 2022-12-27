@@ -1,4 +1,4 @@
-package sistema_xadrez;
+package application;
 import chess.ChessMatch;
 
 
