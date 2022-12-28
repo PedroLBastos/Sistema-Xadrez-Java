@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
+import static sistema_xadrez.UI.limparSaida;
 
 /**
  *
@@ -21,6 +22,7 @@ public class Sistema_Xadrez {
 
         while  (true){
             try{
+                limparSaida();
                 UI.clearScreen();
                 UI.printMatch(chessMatch, captured);
                 System.out.println();
@@ -50,8 +52,6 @@ public class Sistema_Xadrez {
                 System.out.println(e.getMessage());
                 sc.nextLine();
             }
-        }
-       
-    }
-    
+        }  
+    }    
 }

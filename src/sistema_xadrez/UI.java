@@ -7,6 +7,9 @@ import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
 import chess.Color;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -34,11 +37,26 @@ public class UI {
 	public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 	
-	// https://stackoverflow.com/questions/2979383/java-clear-the-console
+	
 	public static void clearScreen() {
 		System.out.print("\033[H\033[2J");
 		System.out.flush();
-	}	
+	}
+        
+        public final static void limparSaida() {
+            try {
+                    Robot robot = new Robot();
+                    robot.setAutoDelay(10);
+                    robot.keyPress(KeyEvent.VK_CONTROL);
+                    robot.keyPress(KeyEvent.VK_L);
+                    robot.keyRelease(KeyEvent.VK_CONTROL);
+                    robot.keyRelease(KeyEvent.VK_L);
+    }       catch   (AWTException ex) {
+    }
+}
+        
+        
+        
 	
 	public static ChessPosition readChessPosition(Scanner sc) {
 		try {
@@ -58,6 +76,9 @@ public class UI {
                 printCapturedPieces(captured);
 		System.out.println("Turno : " + chessMatch.getTurn());
 		System.out.println("Esperando pelo jogador: " + chessMatch.getCurrentPlayer());
+                if (chessMatch.getCheck()){
+                    System.out.println("CHECK!");
+                }
 	}
 	
 	public static void printBoard(ChessPiece[][] pieces) {
