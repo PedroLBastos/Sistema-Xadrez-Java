@@ -38,6 +38,11 @@ public class Sistema_Xadrez {
 				if (capturedPiece != null) {
 					captured.add(capturedPiece);
 				}
+                                if (chessMatch.getPromoted() != null) {
+                                    System.out.println("Digite a peca promovida (B/C/T/Q) ");
+                                    String type = sc.nextLine();
+                                    chessMatch.replacePromotedPiece(type);
+                            }
 			}
 			catch (ChessException e) {
 				System.out.println(e.getMessage());
