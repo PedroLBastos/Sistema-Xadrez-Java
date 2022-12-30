@@ -39,8 +39,12 @@ public class Sistema_Xadrez {
 					captured.add(capturedPiece);
 				}
                                 if (chessMatch.getPromoted() != null) {
-                                    System.out.println("Digite a peca promovida (B/C/T/Q) ");
-                                    String type = sc.nextLine();
+                                    System.out.print("Digite a peca promovida: (B/N/R/Q) ");
+                                    String type = sc.nextLine().toUpperCase();
+                                    while (!type.equals("B") && !type.equals("N") && !type.equals("R") & !type.equals("Q")){
+                                        System.out.println("Valor invalido!");
+                                        type = sc.nextLine().toUpperCase();
+                                    }
                                     chessMatch.replacePromotedPiece(type);
                             }
 			}
