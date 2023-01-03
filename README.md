@@ -1,4 +1,4 @@
-# Sistema-Xadrez-Java
+# Sistema-Xadrez-Java ♟
 
 Sistema de um jogo de Xadrez totalmente funcional e com jogadas especiais.
 
